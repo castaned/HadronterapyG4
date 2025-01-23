@@ -1,10 +1,7 @@
 # HadronterapyG4
 Repositorio para recolectar el codigo de simulacion de hadronterapia 
 
-
-Some basic Git commands are:
+Clonar el repositorio en el servidor 
 ```
-git status
-git add
-git commit
+git clone https://github.com/castaned/HadronterapyG4
 ```
