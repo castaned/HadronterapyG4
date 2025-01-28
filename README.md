@@ -1,6 +1,15 @@
 # HadronterapyG4
 Repositorio para recolectar el codigo de simulacion de hadronterapia 
 
+##Entrar al servidor ACARUS 
+
+Antes de correr la simulación se debe ejecutar el script de configuración inicial y despues cargar los datos de liberias, este paso se debe realizar cada que quiera correr la simulación en una terminal nueva.
+
+```
+source configurar_geant4_v10.sh
+. data.sh 
+```
+
 ## Clonar el repositorio en el servidor 
 ```
 git clone https://github.com/castaned/HadronterapyG4
@@ -15,13 +24,6 @@ cd HadronterapyG4
 ```
 mkdir build
 cd build
-```
-
-Antes de correr la simulación se debe ejecutar el script de configuración inicial y despues cargar los datos de liberias, este paso se debe realizar cada que quiera correr la simulación en una terminal nueva.
-
-```
-source ../../../configurar_geant4_v10.sh
-. ../../../data.sh 
 ```
 
 
