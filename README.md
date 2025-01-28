@@ -21,6 +21,12 @@ Una vez se compila, se crea el siguiente ejecutable con el comando make
 ```
 make -j4
 ```
+Antes de correr la simulación se debe ejecutar el script de configuración inicial y despues cargar los datos de liberias, este paso se debe realizar cada que quiera correr la simulación en una terminal nueva.
+
+```
+source ../configurar_geant4_v10.sh
+. ../data.sh
+```
 
 Finalmente usar el ejecutable para correr simulación, en este caso tomará la configuración por default (no visualización) , solo checar que funciona y después salir con los siguientes comandos
 
@@ -40,9 +46,7 @@ Para poder visualizar la simulación debemos hacer uso de los archivos de config
 
 ```
 ./hadrontherapy  macro/defaultMacro_vis.mac
-
 ```
-
 
 
 
