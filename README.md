@@ -5,6 +5,8 @@ Repositorio para recolectar el codigo de simulacion de hadronterapia
 ```
 git clone https://github.com/castaned/HadronterapyG4
 ```
+Entrar a la carpeta HadronterapyG4 para crear la siguiente carpeta
+
 ## Entrar a la carpeta HadronterapyG4 y crear una carpeta build para compilar el codigo 
 ```
 mkdir build
