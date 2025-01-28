@@ -9,7 +9,14 @@ git clone https://github.com/castaned/HadronterapyG4
 ```
 mkdir build
 cd build
-
+```
+Dentro del directorio build ejecurar el siguiente comando para compilar
 
 ```
+cmake3 -DGeant4_DIR=/storage/apps/c6320/geant4-10.06.p03/lib64/Geant4-10.6.3/ ../hadrontherapy/
+
+```
+
+
+
 
