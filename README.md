@@ -15,6 +15,11 @@ Dentro del directorio build ejecurar el siguiente comando para compilar
 ```
 cmake3 -DGeant4_DIR=/storage/apps/c6320/geant4/geant4-10.06.p03/lib64/Geant4-10.6.3/ ../hadrontherapy/
 ```
+si arroja error tratar de volver a hacer el setup de Geant4 de nueva cuenta 
+
+```
+source /storage/apps/c6320/geant4/geant4-10.06.p03/bin/geant4.sh
+```
 
 Una vez se compila, se crea el siguiente ejecutable con el comando make
 
