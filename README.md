@@ -7,6 +7,10 @@ git clone https://github.com/castaned/HadronterapyG4
 ```
 Entrar a la carpeta HadronterapyG4 para crear la siguiente carpeta
 
+```
+cd HadronterapyG4
+```
+
 ## Entrar a la carpeta HadronterapyG4 y crear una carpeta build para compilar el codigo 
 ```
 mkdir build
