@@ -102,10 +102,16 @@ Repetir estos últimos 2 pasos para enegías iniciales de 70 y 90, para finalmen
 
 ## Análisis en Python
 
-Estos 4 archivos de salida son archivos csv y los graficaremos para ver su comportamiento, para poder acceder al código ejecutaremos ell siguiente comando:
+Estos 4 archivos de salida son archivos csv y los graficaremos para ver su comportamiento, para poder acceder al código primero cambiaremos de directorio a la carpeta llamada "Codigos" 
 
 ```
-cp /LUSTRE/home/ccd/HadronterapyG4/Codigos/Analisis-A .
+cd ../../Codigos/
+```
+
+Después ejecutaremos el código 
+
+```
+jupyter notebook Analisis-A.ipynb
 ```
 
 Ahora corremos el código para poder visualizar la gráfica.
