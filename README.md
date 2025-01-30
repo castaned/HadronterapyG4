@@ -72,25 +72,37 @@ Para poder visualizar la simulación debemos hacer uso de los archivos de config
 emacs macro/defaultMacro_vis.mac &
 ```
 
-Después se modifica únicamente la siguiente línea y se guarda el archivo
+## A partir de aquí se va modicar el ese mismo macro 3 veces variando la energía inicial.
+
+Primero se corre el macro sin modificaciones(el cual tendrá una energía inicial de 60 MeV) con el siguiente código
 
 ```
-/gps/ene/mono 60.0 MeV
+./hadrontherapy  macro/defaultMacro_vis.mac
 ```
-
-Para posteriormente correr la simulación, al terminar de correr este generará varios archivos, nos concentraremos en el llamado Dose.out.
-Renombrar el archivo con el siguiente nombre Dose_"Valor de enegía inicial".out, es decir, para este primer ejemplo será Dose_60.out.
+Nos enfocaremos solamente en un archivo de salida llamado "Dose.out", para esto cambiaremos el nombre para identificar cada archivo de salida.
+Renombraremos el archivo con el siguiente orden Dose_"Valor de enegía inicial".out, es decir, para este primer ejemplo será Dose_60.out.
 El código para renombrar el archivo es el siguiente:
 
 ```
 mv Dose.out Dose_60.out
 ```
 
-Repetir estos últimos 2 pasos para enegías iniciales de 50, 70 y 90.
+Ahora modificaremos la siguiente línea del archivo macro(que debería seguir abierto) para cambiar a una energía inicial de 50 MeV:
+
+```
+/gps/ene/mono 50.0 MeV
+```
+Esto volverá a generar un archivo de salida "Dose.out" por lo que se tendrá que renombrar(siguiendo la secuencia) para un posterior análisis con el siguiente código:
+
+```
+mv Dose.out Dose_50.out
+```
+
+Repetir estos últimos 2 pasos para enegías iniciales de 70 y 90, para finalmente tener 4 archivos de salida "Dose_50.out", "Dose_60.out", "Dose_70.out" y "Dose_90.out" 
 
 ## Análisis en Python
 
-Estos 4 archivos de salida son archivos csv y los graficaremos para ver su comportamiento, par esto primero copiamos la carpeta en donde ya está el código realizado.
+Estos 4 archivos de salida son archivos csv y los graficaremos para ver su comportamiento, para poder acceder al código ejecutaremos ell siguiente comando:
 
 ```
 cp /LUSTRE/home/ccd/HadronterapyG4/Codigos/Analisis-A .
