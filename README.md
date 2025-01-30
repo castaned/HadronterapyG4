@@ -1,7 +1,7 @@
 # HadronterapyG4
 Repositorio para recolectar el codigo de simulacion de hadronterapia 
 
-##Entrar al servidor ACARUS 
+## Entrar al servidor ACARUS 
 
 Antes de correr la simulación se debe ejecutar el script de configuración inicial y despues cargar los datos de liberias, este paso se debe realizar cada que quiera correr la simulación en una terminal nueva.
 
