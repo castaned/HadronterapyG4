@@ -108,7 +108,7 @@ Estos 4 archivos de salida son archivos csv y los graficaremos para ver su compo
 cd ../../Codigos/
 ```
 
-Después ejecutaremos el código 
+Después ejecutaremos lo siguiente
 
 ```
 jupyter notebook Analisis-A.ipynb
