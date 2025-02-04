@@ -116,5 +116,4 @@ jupyter notebook Analisis-A.ipynb
 
 Ahora corremos el código para poder visualizar la gráfica.
 
-
-
+![Analisis_A](https://github.com/user-attachments/assets/08cf64b5-2fec-4488-ac24-cd4c63fb0d83)
