@@ -114,7 +114,7 @@ Después ejecutaremos lo siguiente
 jupyter notebook Analisis-A.ipynb
 ```
 
-Ahora corremos el código para poder visualizar la gráfica.
+Ahora corremos el código para poder visualizar la gráfica, debería ser algo similar a la siguiente:
 
 ![Analisis_A](https://github.com/user-attachments/assets/08cf64b5-2fec-4488-ac24-cd4c63fb0d83)
 
@@ -142,4 +142,39 @@ Una vez abierto el macro modificar la siguiente línea:
 ```
 
 Realizado este cambio se procederá a cambiar de nuevo la energía inicial de la misma manera que la primera parte, variandolo así de 50 MeV, 60 MeV, 70MeV y 90 MeV.
+Es decir, se cambia la siguiente línea del código:
 
+```
+/gps/ene/mono 50.0 MeV
+```
+Se guarda el archivo y se procede a correr la simulación.
+
+```
+./hadrontherapy macro/defaultMacro_vis.mac
+```
+
+Ahora renombraremos el archivo "Dose.out" de la misma forma que se realizó con el primer análisis pero en esta ocación agregandole un "_b".
+Por ejemplo.
+
+```
+mv Dose.out Dose_50_b.out
+```
+
+Repetir los 3 pasos anteriores variando solo los niveles de energía con 60, 70 y 90.
+Al final obtendremos 4 archivos de salida "Dose_50_b.out", "Dose_60_b.out", "Dose_70_b.out" y "Dose_90_b.out"
+
+Ya con los 4 archivos nos regresaremos a la carpeta "Codigos"
+
+```
+cd ../../Codigos/
+```
+
+Estando en esa carpeta abrimos ejecutamos el siguiente comando para abrir la libreta de jupyter
+
+```
+jupyter notebook Analisis-A.ipynb
+```
+
+Ahora corremos el código para poder visualizar la gráfica, debería ser algo similar a la siguiente:
+
+![Analisis_B](https://github.com/user-attachments/assets/0190a5c4-2931-4d45-ae4b-f35c5f71efdc)
