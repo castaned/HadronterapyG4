@@ -117,3 +117,29 @@ jupyter notebook Analisis-A.ipynb
 Ahora corremos el código para poder visualizar la gráfica.
 
 ![Analisis_A](https://github.com/user-attachments/assets/08cf64b5-2fec-4488-ac24-cd4c63fb0d83)
+
+## Segundo Análisis 
+
+Para este segundo análisis se van a variar los niveles de energía de la misma forma que en primer análisis, solo que este caso las dimensiones del detector y del voxel van a ser 
+incrementadas.
+Primero se regresa a la carpeta build, si está en la carpeta codigos utilizar el siguiente comando
+
+```
+cd ../Hadrontherapy/build
+```
+
+Posteriormente se tiene que modificar el macro "defaultMacro_vis.mac", ejecute el siguiente comando para abrir modificar dicho archivo sin tener que cerrarlo:
+
+```
+emacs /macro/defaultMacro_vis.mac &
+```
+
+Una vez abierto el macro modificar la siguiente línea:
+
+```
+/changeDetector/size 8 8 8 cm
+/changeDetector/voxelSize .2 80 80 mm
+```
+
+Realizado este cambio se procederá a cambiar de nuevo la energía inicial de la misma manera que la primera parte, variandolo así de 50 MeV, 60 MeV, 70MeV y 90 MeV.
+
